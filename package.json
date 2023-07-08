@@ -1,0 +1,19 @@
+{
+  "name": "tablefortwo",
+  "version": "1.0.0",
+  "description": "dating app",
+  "main": "webServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor-Su-Ortiz/AppFun.git"
+  },
+  "author": "Victor & Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor-Su-Ortiz/AppFun/issues"
+  },
+  "homepage": "https://github.com/Victor-Su-Ortiz/AppFun#readme"
+}
