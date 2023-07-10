@@ -1,25 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <title>home</title>
+  <meta charset="UTF-8">
+  <title>My Dating Web App</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <p>home</p>
-  <script type="text/javascript">
-    //<![CDATA[
-    // Angular doesn't work using the file protocol and it dies with an obscure error
-    // message.  Since the project's files are accessible using either the file or
-    // http protocols we warn the user if they are not using http.
-    if (window.location.protocol !== 'http:') {
-      var msg = "Project #7 files must be accessed with the http protocol (not from local files)." +
-        "\nUse the URL http://localhost:3000";
-      console.error(msg);
-      alert(msg);
-    }
-            //]]>
-  </script>
+  <header>
+    <h1>Welcome to My Dating Web App</h1>
+  </header>
+
+  <main>
+    <section class="signup">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <section class="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="email" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
